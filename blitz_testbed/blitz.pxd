@@ -27,6 +27,7 @@ cdef extern from "blitz/array.h" namespace "blitz":
         TinyVector(T value1, T value2, T value3, T value4) except +
         iterator begin() except +
         iterator end() except +
+        T *data()
 
     enum preexistingMemoryPolicy:
         duplicateData

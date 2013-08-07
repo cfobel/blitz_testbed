@@ -3,7 +3,7 @@
 from distutils.core import setup, Extension
 from Cython.Build import cythonize
 
-blitz_testbed = Extension('blitz_testbed.blitz_testbed',
+blitz_testbed = Extension('blitz_testbed.BlitzTestbed',
                       ['blitz_testbed/BlitzTestbed.pyx'],
                       extra_objects=['blitz_testbed/lib/libblitz.a'],
                       language='c++')
